@@ -1,0 +1,28 @@
+.footer {
+  background-color: #1c1c1e;
+  color: #ffffff;
+  text-align: center; 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 576px) {
+    .footer {
+      text-align: left;
+      }
+    
+    .footer .text-sm-end {
+        text-align: right;
+      }
+    }
+    

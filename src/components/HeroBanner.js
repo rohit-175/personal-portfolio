@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+// import headerImg from "../assets/img/headerImg.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-//import 'animate.css';
-//import TrackVisibility from 'react-on-screen';
+import '../Styles/HeroBanner.css'
 
 export const HeroBanner = () => {
 
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"]
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const toRotate = [ "Web Developer", "ML Enthusiast", "Problem Solver" ]
+    const [delta, setDelta] = useState(200);
     const [index, setIndex] = useState(1);
     const [text, setText] = useState('')
     const period = 2000
@@ -31,7 +30,7 @@ export const HeroBanner = () => {
         setText(updatedText);
     
         if (isDeleting) {
-          setDelta(prevDelta => prevDelta / 2);
+          setDelta(50);
         }
     
         if (!isDeleting && updatedText === fullText) {
@@ -42,7 +41,7 @@ export const HeroBanner = () => {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
           setIndex(1);
-          setDelta(500);
+          setDelta(200);
         } else {
           setIndex(prevIndex => prevIndex + 1);
         }
@@ -54,14 +53,17 @@ export const HeroBanner = () => {
           <Container>
             <Row className="aligh-items-center">
               <Col xs={12} md={6} xl={7}>
-                
-                  
+                    <h1>{`Hi! I'm Rohit and I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Enthusiast", "Problem Solver" ]'><span className="wrap">{text}</span></span></h1>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{`Hi! I'm Rohit and I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>Your friendly neighborhood web developer here. I craft websites that work harder than I do and explore tech like it’s a buffet—sampling everything from front-end delicacies to backend surprises. Join me as I turn coffee into code and ideas into pixels!</p>
                       <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 
               </Col>
+              {/* <Col>
+              <div>
+                  <img src={headerImg} alt="Header Img"/>
+                </div>
+              </Col> */}
             </Row>
           </Container>
         </section>
