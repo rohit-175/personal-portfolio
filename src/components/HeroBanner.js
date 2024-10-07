@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 // import headerImg from "../assets/img/headerImg.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import '../Styles/HeroBanner.css'
@@ -13,6 +13,10 @@ export const HeroBanner = () => {
     const [index, setIndex] = useState(1);
     const [text, setText] = useState('')
     const period = 2000
+    const[activeLink, setActiveLink] = useState('home')
+    const onUpdateActiveLink = (value) => {
+      setActiveLink(value)
+  }
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -56,7 +60,8 @@ export const HeroBanner = () => {
                     <h1>{`Hi! I'm Rohit and I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Enthusiast", "Problem Solver" ]'><span className="wrap">{text}</span></span></h1>
                     <span className="tagline">Welcome to my Portfolio</span>
                       <p>Your friendly neighborhood web developer here. I craft websites that work harder than I do and explore tech like it’s a buffet—sampling everything from front-end delicacies to backend surprises. Join me as I turn coffee into code and ideas into pixels!</p>
-                      <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                      <Nav.Link href="#footer" className={activeLink === 'footer' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('footer')}><button className='vvd'><span>Get in Touch<ArrowRightCircle size={25} /></span></button>
+             </Nav.Link>
                 
               </Col>
               {/* <Col>

@@ -1,20 +1,25 @@
 .footer {
-  background-color: #1c1c1e;
+  background-color: #121212;
   color: #ffffff;
   text-align: center; 
   position: relative;
   bottom: 0;
   width: 100%;
   }
-  
   .footer p {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
+  #outro{
+    padding-top: 20px;
+    text-align: center;
+  }
+  #mail span{
+    color: #07e2f1;
+    text-decoration: underline;
+}
   
   @media (min-width: 576px) {
     .footer {
@@ -25,4 +30,43 @@
         text-align: right;
       }
     }
-    
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      gap: 20px;
+  }
+  .social-icon a {
+      width: 42px;
+      height: 42px;
+      background: black;
+      display: inline-flex;
+      border-radius: 50%;
+      margin-right: 6px;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .social-icon a::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.3s ease-in-out;
+  }
+  .social-icon a:hover::before {
+      transform: scale(1.1);
+  }
+  .social-icon a img {
+      width: 50%;
+      z-index: 1;
+      transition: 0.3s ease-in-out;
+  }
+  .social-icon a:hover img {
+      filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  }
