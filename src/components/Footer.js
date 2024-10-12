@@ -22,7 +22,9 @@ export const Footer = () => {
                 <a href='https://github.com/rohit-175' target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt='Github'/></a>
                 <a href='#'><img src={navIcon3} alt='Instagram'/></a>
             </div>
-                <p>Created by Rohit Saseendran&nbsp;|&nbsp;<CopyrightIcon/>&nbsp;2024&nbsp;|&nbsp;All Rights Reserved
+                <p>
+                  <CopyrightIcon/>&nbsp;2024&nbsp;|&nbsp;Created by Rohit Saseendran
+                  {/* &nbsp;All Rights Reserved */}
                 </p>
               </Col>
             </Row>

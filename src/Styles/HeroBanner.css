@@ -23,6 +23,9 @@
     line-height: 1;
     margin-bottom: 20px;
     display: block;
+    min-height: 3rem;
+    width: 70vw;
+    height: 30vh;
   }
   .banner p {
     color: #B8B8B8;
@@ -49,9 +52,7 @@
   .banner button:hover svg {
     margin-left: 25px;
   }
-  .banner img {
-    animation: updown 3s linear infinite;
-  }
+
   @keyframes updown {
       0% {
           transform: translateY(-20px);
@@ -65,4 +66,40 @@
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+    display: inline-block;
+    vertical-align: top;
+    transition: width 0.2s ease-in-out;
+    
+    overflow: hidden;
   }
+
+  @media (max-width: 768px) { 
+    .banner h1 {
+      font-size: 40px;
+      width: 90vw;
+      height: 10vh;
+      line-height: 1.2;
+    }
+  
+    .banner p {
+      font-size: 16px;
+    }
+  
+    .banner button {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Further adjustment for very small screens */
+    .banner h1 {
+      font-size: 30px; /* Further reduce font size */
+      width: 98vw; /* Full width for small screens */
+      margin-bottom: 15px; /* Adjust margin if needed */
+    }
+  
+    .banner p {
+      font-size: 14px;
+      width: 100%; /* Allow paragraph to take full width */
+    }
+  }
+  

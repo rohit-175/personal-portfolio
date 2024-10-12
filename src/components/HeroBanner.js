@@ -57,7 +57,7 @@ export const HeroBanner = () => {
           <Container>
             <Row className="aligh-items-center">
               <Col xs={12} md={6} xl={7}>
-                    <h1>{`Hi! I'm Rohit and I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Enthusiast", "Problem Solver" ]'><span className="wrap">{text}</span></span></h1>
+                    <h1 className>{`Hi! I'm Rohit and I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Enthusiast", "Problem Solver" ]'><span className="wrap">{text}</span></span></h1>
                     <span className="tagline">Welcome to my Portfolio</span>
                       <p>Your friendly neighborhood web developer here. I craft websites that work harder than I do and explore tech like it’s a buffet—sampling everything from front-end delicacies to backend surprises. Join me as I turn coffee into code and ideas into pixels!</p>
                       <Nav.Link href="#footer" className={activeLink === 'footer' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('footer')}><button className='vvd'><span>Get in Touch<ArrowRightCircle size={25} /></span></button>
