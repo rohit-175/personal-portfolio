@@ -20,7 +20,7 @@ export const Footer = () => {
               <div className='social-icon'>
                 <a href='https://www.linkedin.com/in/rohit-saseendran-49a223215/' target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt='Linkedin'/></a>
                 <a href='https://github.com/rohit-175' target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt='Github'/></a>
-                <a href='#'><img src={navIcon3} alt='Instagram'/></a>
+                <a href='https://www.instagram.com/_rohit175/' target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt='Instagram'/></a>
             </div>
                 <p>
                   <CopyrightIcon/>&nbsp;2024&nbsp;|&nbsp;Created by Rohit Saseendran
