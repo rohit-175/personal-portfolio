@@ -15,7 +15,7 @@ export const Footer = () => {
               I'm always open to discussing ideas and exploring how we can work together!<br/>
               </p>
               <p id='mail'>
-              Email: &nbsp; <span>saseendranrohit3002@gmail.com</span>
+              Email: &nbsp; <span>saseendranrohit@gmail.com</span>
               </p>
               <div className='social-icon'>
                 <a href='https://www.linkedin.com/in/rohit-saseendran-49a223215/' target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt='Linkedin'/></a>

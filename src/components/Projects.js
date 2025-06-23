@@ -14,9 +14,9 @@ export const Projects = () => {
         },
         {
             imgUrl: projImg1,
-            title: 'Movie Recommender',
-            description: 'ML project that suggests movies based on user preferences using content-based filtering.',
-            sourceLink: 'https://github.com/rohit-175/movie-recommender-system',
+            title: 'Autogen Multi-Agent Chat',
+            description: 'AI chat system using AutoGen with multiple agents collaborating to answer user queries.',
+            sourceLink: 'https://github.com/rohit-175/autogen-multiagent-chat',
         },
         {
             imgUrl: projImg1,

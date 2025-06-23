@@ -45,7 +45,7 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             
-            <Nav.Link href="https://drive.google.com/file/d/19QcAqBD8Tl8O4XxVSC2KYX0VIWC26u_t/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}><button className='vvd'><span>View Resume</span></button>
+            <Nav.Link href="https://docs.google.com/document/d/1xsh_7_PVHJHnK_8jJGDsqiO2vvC-2V_J/edit?usp=drive_link&ouid=112512311002130193923&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}><button className='vvd'><span>View Resume</span></button>
             </Nav.Link>
           </span>
         </Navbar.Collapse>
